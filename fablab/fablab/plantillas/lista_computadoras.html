@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>Lista de Computadoras  en FabLab Oaxaca</title>
+		<meta charset='utf-8>'>
+	</head>
+
+	<body>
+
+		<style>
+			img { width:100px; }
+		</style>
+		<h1>Lista de Computadoras en FabLab Oaxaca<h1>
+			<a href="/computadora/nueva">Agregar una Computadora</a>
+			{% for elemento in lista %}
+			<ul>
+				<li><strong>{{elemento.nombre}}</strong></li>
+				<li><strong>{{elemento.numserie}}</strong></li>
+				<li><strong>{{elemento.marca}}</strong></li>
+				<li><strong>{{elemento.modelo}}</strong></li>
+				<li><strong>{{elemento.estado}}</strong></li>
+				<img src='{{MEDIA_URL}}{{elemento.imagenComputadora}}'>
+			</ul>
+			{% endfor %}
+	</body>
+</html>		
