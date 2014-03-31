@@ -1,0 +1,20 @@
+
+<style>
+	img { width:100px; }
+</style>
+
+
+		<h1>Lista de Muebles en FabLab Oaxaca<h1>
+			<a href="/muebles/nuevo">Agregar un Mueble</a>
+		<section>
+		<ul>	
+			{% for elemento in listamuebles %}
+			
+				<li><strong>{{elemento.nombre}}</strong></li>
+				<li><strong>{{elemento.color}}</strong></li>		
+				<img src='{{MEDIA_URL}}{{elemento.imagenMuebles}}'>
+			
+			{% endfor %}
+		<ul>
+		</section>	
+	

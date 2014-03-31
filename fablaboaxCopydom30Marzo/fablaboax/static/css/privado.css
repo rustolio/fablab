@@ -1,0 +1,70 @@
+/*algunos ejemplos con css */
+body, header, footer, div, h1, h2, ul, li, a{
+	margin:0px;
+	padding:0px;
+	font-family: verdana;
+}
+
+body{
+/*background-image: url(/static/img/hojasverdes.jpg);
+background-repeat: no-repeat;
+background-size:100% ;
+background-attachment: fixed;
+*/
+}
+
+header{
+	margin:10px auto;
+	width: 1000px;
+	height: 230px;	
+	/*color:#ffffff;*/
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff; 
+	margin: 10px;
+}
+
+div.contenedor{
+	width: 140px;
+	height: 230px;
+	float:left;
+}
+
+div#uno{
+	background-color: rgb(208, 101, 3);
+}
+
+div#dos{
+	background-color: rgb(233, 147, 26);
+}
+
+div#tres{
+	background-color: rgb(22, 145, 190);
+}
+
+div#cuatro{
+	background-color: rgb(22, 107, 162);
+}
+
+div#cinco{
+	background-color: rgb(27, 54, 71);
+}
+
+div#seis{
+	background-color: rgb(21, 40, 54);
+}
+
+
+/*.activo{
+	font-weight: bold;
+}
+
+.impar {
+	background-color: #90EE90;
+}
+
+.par {
+	background-color: #5ACC5A;
+}*/

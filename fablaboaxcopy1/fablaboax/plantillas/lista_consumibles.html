@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<style>
+	img { width:100px; }
+</style>
+
+<html lang='es'>
+	<head>
+		<title>Lista de consumibles  en FabLab Oaxaca</title>
+		<meta charset='utf-8>'>
+
+	</head>
+
+	<body>
+		<h1>Lista de Consumibles en FabLab Oaxaca<h1>
+			<a href="/consumibles/nuevo">Agregar Consumible</a>
+			{% for elemento in lista %}
+			<ul>
+				<li><strong>{{elemento.nombre}}</strong></li>
+				<li><strong>{{elemento.cantidad}}</strong></li>	
+				<img src='{{MEDIA_URL}}{{elemento.imagenConsumible}}'>			
+			</ul>
+			{% endfor %}
+	</body>
+</html>			
